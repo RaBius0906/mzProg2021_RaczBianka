@@ -27,6 +27,18 @@ namespace MZ_Prog2021_RaczBianka
         }
 
         public string getNev() { return Nev; }
+        public int getElso() { return Elso; }
+        public int getUtolso() { return Utolso; }
+        public int getSuly() { return Suly; }
+        public int getMagassag() { return Magassag; }
+
+
+        public override string ToString()
+        {
+            return $" ";
+        }
+
+
 
 
     }

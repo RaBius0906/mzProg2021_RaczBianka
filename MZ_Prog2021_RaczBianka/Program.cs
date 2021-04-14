@@ -34,11 +34,48 @@ namespace MZ_Prog2021_RaczBianka
                 }
             }
 
-            // 3. feladat - Adott név szerepel-e a 2. feladat listájában, ha igen irja ki amagasságát, ha nem "hibás adat!" üzenet jelenjen meg.
+            // 3. feladat - Adott név szerepel-e a 2. feladat listájában, ha igen irja ki a magasságát, ha nem "hibás adat!" üzenet jelenjen meg.
             // magasság adat inch-ben, 1 tizedes jegyre kerekítve
-            // commit
+            Random rnd = new Random();
+            int bekertNevIndex = rnd.Next(0, 385);
+            string bekertNev = adatok[bekertNevIndex].Nev;
+            //string bekertNev = "Mark Davis";
+
+            int listaN = ElsoPalya1980.Count;
+           
+            for (i = 0; i < listaN; i++)
+            {
+                if (ElsoPalya1980[i] == bekertNev)
+                {
+                    
+                    Console.WriteLine($" {bekertNev} magassága: {adatok[bekertNevIndex].Magassag / 2.54:F1} inch");
+                }
+                else
+                {
+                    Console.WriteLine($"Hibás adat!");
+                }
+            }
+
 
             // 4. feladat - Válasszunk egy tetszőleges évszámot és irassunk ki mindent azokról a versenyzőkről akik ebben az évben léptek először a pályára.
+            //int tetszolegesEvszam = rnd.Next(1990, 1999);
+            int tetszolegesEvszam = 1999;
+            
+            List<string> evszamLista = new List<string>();
+
+            foreach (Adat adat in adatok)
+            {
+                if (adat.Elso == tetszolegesEvszam)
+                {
+                    evszamLista.Add(adat.getNev());
+                }
+            }
+            Console.WriteLine($"A {tetszolegesEvszam} évben először pályára lépett játékosok neveit:");
+            foreach (string item in evszamLista)
+            {
+                Console.WriteLine($"\t {item} ");
+            }
+
 
             // 5. feladat - Melyik a legkorábbi év amikor pályára léptek? V:1969
             int legkorabbiKezdesIndex = 0;
@@ -60,9 +97,28 @@ namespace MZ_Prog2021_RaczBianka
 
             // 7. feladat - Hány olyan játékos van akinek a nevében szerepel a John, sorold fel ezeket a neveket.
 
-            // 8. feladat - 
 
+            // 8. feladat - fájlba kiratás
+            //Dictionary<string, int> nevekDB = new Dictionary<string, int>();
+            //foreach (Adat adat in adatok)
+            //{
+            //    string kulcs = adat.Nev.Split(' ');
+            //    if (nevekDB.ContainsKey(kulcs))
+            //    {
+            //        nevekDB[kulcs]++;
+            //    }
+            //    else
+            //    {
+            //        nevekDB.Add(kulcs, 1);
+            //    }
+            //}
+            //Console.WriteLine($"Melyik névből hány darab van a listában?");
+            //foreach (KeyValuePair<string, int> item in nevekDB)
+            //{
+            //    Console.WriteLine($"\t{item.Key}: {item.Value} db");
+            //}
 
+            File.WriteAllLines("kernevek.txt");
 
 
             Console.ReadLine();
