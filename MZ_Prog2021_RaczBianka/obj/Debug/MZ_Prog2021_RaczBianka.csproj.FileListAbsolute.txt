@@ -1,0 +1,7 @@
+C:\Users\CFY\source\repos\SnMZ_Prog2021_RaczBianka\MZ_Prog2021_RaczBianka\bin\Debug\MZ_Prog2021_RaczBianka.exe.config
+C:\Users\CFY\source\repos\SnMZ_Prog2021_RaczBianka\MZ_Prog2021_RaczBianka\bin\Debug\MZ_Prog2021_RaczBianka.exe
+C:\Users\CFY\source\repos\SnMZ_Prog2021_RaczBianka\MZ_Prog2021_RaczBianka\bin\Debug\MZ_Prog2021_RaczBianka.pdb
+C:\Users\CFY\source\repos\SnMZ_Prog2021_RaczBianka\MZ_Prog2021_RaczBianka\obj\Debug\MZ_Prog2021_RaczBianka.csprojAssemblyReference.cache
+C:\Users\CFY\source\repos\SnMZ_Prog2021_RaczBianka\MZ_Prog2021_RaczBianka\obj\Debug\MZ_Prog2021_RaczBianka.csproj.CoreCompileInputs.cache
+C:\Users\CFY\source\repos\SnMZ_Prog2021_RaczBianka\MZ_Prog2021_RaczBianka\obj\Debug\MZ_Prog2021_RaczBianka.exe
+C:\Users\CFY\source\repos\SnMZ_Prog2021_RaczBianka\MZ_Prog2021_RaczBianka\obj\Debug\MZ_Prog2021_RaczBianka.pdb
